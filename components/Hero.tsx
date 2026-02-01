@@ -23,16 +23,16 @@ const Hero: React.FC = () => {
       </div>
 
       <div className="max-w-4xl mx-auto text-center relative z-10">
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 mb-8 backdrop-blur-sm animate-bounce">
-          <span className="w-2 h-2 rounded-full bg-purple-500 shadow-[0_0_8px_rgba(168,85,247,1)]" />
-          <span className="text-xs font-semibold text-purple-400 uppercase tracking-widest">Converting Traffic since 2018</span>
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 mb-8 backdrop-blur-sm">
+          <span className="w-2 h-2 rounded-full bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,1)]" />
+          <span className="text-xs font-semibold text-emerald-400 uppercase tracking-widest">Converting Traffic since 2018</span>
         </div>
 
         <h1 className="text-5xl md:text-8xl font-extrabold tracking-tight mb-8 leading-[1.1]">
-          Turn <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 animate-gradient">Viewers</span> into <br />
+          Turn <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-emerald-500 to-teal-500">Viewers</span> into <br />
           <span className="relative inline-block">
             Loyal Buyers
-            <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-transparent via-purple-500 to-transparent blur-[2px]" />
+            <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-transparent via-emerald-500 to-transparent blur-[2px]" />
           </span>
         </h1>
 
@@ -41,14 +41,14 @@ const Hero: React.FC = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-          <button className="group relative px-8 py-4 rounded-full bg-white text-black font-bold text-lg overflow-hidden transition-all hover:scale-105">
+          <button className="group relative px-8 py-4 rounded-full bg-white text-black font-bold text-lg overflow-hidden transition-all hover:scale-105 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 focus:ring-offset-2 focus:ring-offset-black cursor-pointer">
             <span className="relative z-10">Start Your Project</span>
-            <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-blue-400 opacity-0 group-hover:opacity-20 transition-opacity" />
+            <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 to-cyan-400 opacity-0 group-hover:opacity-20 transition-opacity" />
           </button>
-          
-          <button className="flex items-center gap-3 px-8 py-4 rounded-full glass-card text-white font-semibold transition-all hover:bg-white/10">
-            <div className="w-8 h-8 rounded-full bg-purple-500/20 flex items-center justify-center">
-              <svg className="w-3 h-3 text-purple-400 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+
+          <button className="flex items-center gap-3 px-8 py-4 rounded-full glass-card text-white font-semibold transition-all hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 focus:ring-offset-2 focus:ring-offset-black cursor-pointer">
+            <div className="w-8 h-8 rounded-full bg-emerald-500/20 flex items-center justify-center">
+              <svg className="w-3 h-3 text-emerald-400 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
             </div>
             Watch Showreel
           </button>
@@ -63,7 +63,7 @@ const Hero: React.FC = () => {
           { label: 'Awards Won', value: '24' },
           { label: 'Team Experts', value: '12' },
         ].map((stat, idx) => (
-          <div key={idx} className="glass-card p-6 rounded-3xl text-center border-white/5 hover:border-white/20 transition-all hover:-translate-y-1">
+          <div key={idx} className="glass-card p-6 rounded-3xl text-center border-white/5 hover:border-white/20 transition-all hover:-translate-y-1 cursor-pointer">
             <div className="text-3xl font-bold mb-1 text-white">{stat.value}</div>
             <div className="text-xs uppercase tracking-widest text-gray-500 font-bold">{stat.label}</div>
           </div>
